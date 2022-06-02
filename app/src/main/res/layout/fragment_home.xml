@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginRight="0dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:background="#F4F4F4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/logo_fix"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#373737"
+                    android:hint="Cari yang fresh di sini..."/>
+
+                <ImageView
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="37dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_search_green_24"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:background="@color/background_abu"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_slider"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarSize="3dp"
+                android:fadeScrollbars="false"
+                android:scrollbarTrackHorizontal="@drawable/scroll_track"
+                android:scrollbarThumbHorizontal="@drawable/scroll_thumb">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/white">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:orientation="vertical"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/ctg_sayur"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:src="@drawable/sayur"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ctg_sayur"
+                                android:layout_marginLeft="30dp"
+                                android:text="Sayuran"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/ctg_buah"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:src="@drawable/buah"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ctg_buah"
+                                android:layout_marginLeft="35dp"
+                                android:text="Buah"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/ctg_protein"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:src="@drawable/protein"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ctg_protein"
+                                android:layout_marginLeft="30dp"
+                                android:text="Protein"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/ctg_daging"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:src="@drawable/daging"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ctg_daging"
+                                android:layout_marginLeft="30dp"
+                                android:text="Daging"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/ctg_karbohidrat"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:src="@drawable/karbohidrat"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ctg_karbohidrat"
+                                android:layout_marginLeft="18dp"
+                                android:text="Karbohidrat"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/ctg_makanan"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:src="@drawable/makanan"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ctg_makanan"
+                                android:layout_marginLeft="22dp"
+                                android:text="Makanan"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/ctg_minuman"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:src="@drawable/minuman"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ctg_minuman"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="10dp"
+                                android:text="Minuman"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/white">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/ctg_semuaProduk"
+                                android:layout_marginLeft="21dp"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:src="@drawable/semua_produk"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ctg_semuaProduk"
+                                android:layout_marginLeft="33dp"
+                                android:layout_marginBottom="25dp"
+                                android:gravity="center"
+                                android:text="Semua\nProduk"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/ctg_terbaru"
+                                android:layout_marginLeft="21dp"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:src="@drawable/terbaru"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ctg_terbaru"
+                                android:layout_marginLeft="28dp"
+                                android:text="Terbaru"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/ctg_bumbuDapur"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:src="@drawable/bumbu_dapur"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ctg_bumbuDapur"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center"
+                                android:text="Bumbu\nDapur"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/ctg_susu_telur"
+                                android:layout_marginLeft="21dp"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:src="@drawable/susu_telur"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ctg_susu_telur"
+                                android:layout_marginLeft="23dp"
+                                android:gravity="center"
+                                android:text="Susu dan\nTelur"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/ctg_organik"
+                                android:layout_marginLeft="21dp"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:src="@drawable/organik"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ctg_organik"
+                                android:layout_marginLeft="28.5dp"
+                                android:text="Organik"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/ctg_frozen_food"
+                                android:layout_marginLeft="25dp"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:src="@drawable/frozen_food"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ctg_frozen_food"
+                                android:layout_marginLeft="33dp"
+                                android:gravity="center"
+                                android:text="Frozen\nFood"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/ctg_spesial_promo"
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:src="@drawable/spesial_promo"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ctg_spesial_promo"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="20dp"
+                                android:gravity="center"
+                                android:text="Spesial\nPromo"/>
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#323232"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spesial Hari Ini"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_produk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#323232"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Produk Terlaris"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_produkTerlasir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#323232"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sarapan Sehat dan Bergizi"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_spesialHariIni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="90dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
